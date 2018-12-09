@@ -12,11 +12,11 @@ in its "in graphics" form:
    IN GRAPHICS:   x = x + pixels
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and Nathaniel Craan.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import math
-import builtins  # Never necessary, but here for pedagogical reasons
+import builtins  # Never necessary, but here for pedagogic
 
 
 # -----------------------------------------------------------------------------
