@@ -109,6 +109,21 @@ def draw_parallel_lines(n, point, length, window):
     #          ** FIRST DO A CONCRETE EXAMPLE BY HAND! **
     ###########################################################################
     # -------------------------------------------------------------------------
+    num = 0
+    for k in range(n * 30):
+        if k % 10 == 0:
+            num = k + 30
+            print(num)
+
+    for k in range(n):
+        line1 = rg.Line(point, rg.Point(length, num))
+        line1.attach_to(window)
+
+
+    window.render()
+
+
+
 
 
 def run_test_draw_lines():

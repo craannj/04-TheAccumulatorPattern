@@ -90,7 +90,7 @@ def run_test_sum_from():
     print('       actual (from my code):  ', answer_from_my_code)
 
 # -----------------------------------------------------------------------------
-# TODO: 2.
+# DONE: 2.
 #   When you have READ the above  run_test_sum_from  function,
 #   asking questions as needed, and you feel that you (mostly, at least)
 #   understand it, and you feel that you understand from the example:
@@ -124,6 +124,12 @@ def sum_from(m, n):
     #   you must NOT use the 2 or 3-parameter versions
     #   of the RANGE expression, if you happen to know them.
     # -------------------------------------------------------------------------
+    count = 0
+    for k in range((n + 1) - m):
+        count = (k + m) + count
+    return count
+
+
 
 
 def run_test_factorial():
@@ -179,7 +185,10 @@ def factorial(n):
     # IMPORTANT:  Your solution MUST
     #   use an explicit    for ... in range(...):     statement.
     # -------------------------------------------------------------------------
-
+    count = 1
+    for k in range(n):
+        count = (n - k) * count
+    return count
 
 def run_test_count_cosines_from():
     """ Tests the   count_cosines_from   function. """
@@ -251,7 +260,11 @@ def count_cosines_from(m, n, x):
     #   you must NOT use the 2 or 3-parameter versions
     #   of the RANGE expression, if you happen to know them.
     # -------------------------------------------------------------------------
-
+    count = 0
+    for k in range((n + 1) - m):
+        if math.cos(k + m) > x:
+            count = 1 + count
+    return count
 
 def run_test_sum_unit_fractions_from():
     """ Tests the   sum_unit_fractions_from   function. """
@@ -298,7 +311,10 @@ def sum_unit_fractions_from(m, n):
     #   you must NOT use the 2 or 3-parameter versions
     #   of the RANGE expression, if you happen to know them.
     # -------------------------------------------------------------------------
-
+    count = 0
+    for k in range((n + 1) - m):
+        count = (1/(k + m)) + count
+    return count
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
